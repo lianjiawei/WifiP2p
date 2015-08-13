@@ -13,9 +13,4 @@
         android:orderInCategory="100"
         android:title="@string/action_strock"
         android:showAsAction="never"/>
-	<item
-        android:id="@+id/next_activity"
-        android:orderInCategory="100"
-        android:title="动画模式"
-        android:showAsAction="never"/>
 </menu>
