@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#001d30"
+    android:orientation="vertical" >
+	 <com.xiameng.animview.MetaballView
+        android:id="@+id/metaball"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
+    <Button
+        android:id="@+id/bt_discover_peers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_selector"
+        android:onClick="mDiscoverPeers"
+        android:text="@string/to_dis_wifi" />
+
+    <Button
+        android:id="@+id/bt_send_peer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_selector"
+        android:onClick="mSendPeer"
+        android:visibility="gone"
+        android:text="@string/to_connect_wifi" />
+     <Button
+        android:id="@+id/bt_disconnect_peer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_selector"
+        android:onClick="mDisConnectPeer"
+        android:text="@string/to_disconnect_wifi" />
+
+     <ListView
+         android:layout_marginTop="10dp"
+         android:padding="5dp"
+         android:id="@+id/devices_lv"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" >
+     </ListView>
+
+</LinearLayout>
